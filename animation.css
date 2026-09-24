@@ -1,0 +1,78 @@
+.body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box1,
+.rotate1,
+.scale1,
+.skew1,
+.box2 {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+.box1 {
+    background-color: lightpink;
+}
+
+.box1:hover {
+    transform: translate(50px, 30px);
+    background-color: orange;
+}
+
+
+.rotate1 {
+    background-color: lightgreen;
+}
+
+.rotate1:hover {
+    transform: rotate(360deg);
+    background-color: skyblue;
+}
+
+.scale1 {
+    background-color: lightblue;
+}
+
+.scale1:hover {
+    transform: scale(1.4);
+    background-color: violet;
+}
+
+.skew1 {
+    background-color: lightyellow;
+}
+
+.skew1:hover {
+    transform: skew(20deg, 10deg);
+    background-color: gold;
+}
+
+
+.box2 {
+    background-color: lightcoral;
+}
+
+.box2:hover {
+    transform: translate(30px, 20px) rotate(20deg) scale(1.2);
+    background-color: fuchsia;
+}
